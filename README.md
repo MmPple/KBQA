@@ -1,4 +1,4 @@
 # KBQA
 Simple Question Anwsering via Knowledge base
 
-SOTA model for Entity Re-rank and Relation Detection
+SOTA model for Entity includes Re-rank and Relation Detection
