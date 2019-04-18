@@ -294,7 +294,7 @@ question_dic = dp.qdic
 relation_dic = dp.rdic
 
 try:
-    fobj=open(opt.save_path+"/Fast_"+PATH+"_RelationDetection_result_"+str(sys.argv[3])+".txt",'a')
+    fobj=open(opt.save_path+"/Fast_"+PATH+"_RelationDetection_result_"+str(sys.argv[2])+".txt",'a')
 except IOError:
     print ('*** file open error:')
 
