@@ -26,7 +26,7 @@ os.environ["CUDA_VISIBLE_DEVICES"] = "0"
 
 torch.backends.cudnn.enabled = False
 
-number = int(sys.argv[2])
+number = 50000
 PATH = str(sys.argv[1])
 
 opt = config.parse_opt()
@@ -276,7 +276,7 @@ model.cuda()
 model.eval()
 
 #model = torch.load('./data/mfh_baseline_glove_iter50000.pth')
-model.load_state_dict(torch.load('./{}/mfh_baseline_glove_iter'.format(opt.pth_path)+str(sys.argv[3])+'.pth'))
+model.load_state_dict(torch.load('./{}/mfh_baseline_glove_iter'.format(opt.pth_path)+str(sys.argv[2])+'.pth'))
 folder = "mfh_baseline_%s"%PATH
 dp = VQADataProvider(opt, batchsize=opt.VAL_BATCH_SIZE, mode='%s'%PATH,  folder=folder)
 epoch = 0
